@@ -1,0 +1,171 @@
+Cmp-Mod V01 Created by PcbNew   date = 2024-07-18T14:01:56+0300
+
+BeginCmp
+TimeStamp = b22f75e1-ab34-4601-9108-520d3bda035b
+Path = 
+Reference = REF**;
+ValeurCmp = Heatsink;
+IdModule  = Heatsink:Heatsink_TO220_22x25x15mm_P_18mm;
+EndCmp
+
+BeginCmp
+TimeStamp = b9e615e1-bf06-462d-ae93-ac7a01bd4ad8
+Path = 
+Reference = REF**;
+ValeurCmp = Heatsink;
+IdModule  = Heatsink:Heatsink_TO220_22x25x15mm_P_18mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 3129f6e6-ba40-41cd-ad3f-7d0bc64c0d38
+Path = /f0880418-106a-4d47-95a2-a99d6dafdd7e
+Reference = U3;
+ValeurCmp = LM7812_TO220;
+IdModule  = Package_TO_SOT_THT:TO-220-3_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = 6fd0f45a-5bcf-4c56-bfcf-fffb41d989b7
+Path = /3fac6709-da5a-456e-a4f5-b94180a3ad2f
+Reference = U2;
+ValeurCmp = LM7912_TO220;
+IdModule  = Package_TO_SOT_THT:TO-220-3_Vertical;
+EndCmp
+
+BeginCmp
+TimeStamp = ce9c195e-514b-4286-9f19-0eeed73ffb39
+Path = /8c0a805d-a940-4526-a1cf-19f6493d555e
+Reference = R2;
+ValeurCmp = R;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = a46a413f-d5b4-46c1-bc2f-6a8ba901e451
+Path = /646951cc-5b9d-4d44-bcb9-1202e291e7c9
+Reference = R1;
+ValeurCmp = R;
+IdModule  = Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = efd5de54-95bf-46e4-a180-d402eabd3f69
+Path = /9f4be658-10a2-42ab-ac5f-a0eda6f023a4
+Reference = J2;
+ValeurCmp = Screw_Terminal_01x03;
+IdModule  = TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm;
+EndCmp
+
+BeginCmp
+TimeStamp = ffda4151-f996-46fc-9122-b5b288afdaf5
+Path = /3fcae9b2-bfce-467e-9904-351e0186d03c
+Reference = J1;
+ValeurCmp = Screw_Terminal_01x03;
+IdModule  = TerminalBlock:TerminalBlock_Altech_AK300-3_P5.00mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 6fcef0f8-4cc3-428a-aeed-fa7322de4594
+Path = /82173ca9-3c98-4c04-9ffc-6e4cbfade1f9
+Reference = D5;
+ValeurCmp = LED;
+IdModule  = LED_THT:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 1d4e07b9-5d90-48a3-882c-6fa1ae8ee612
+Path = /0975570c-8642-498c-92aa-389a56793ef5
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED_THT:LED_D3.0mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 295b14df-5264-4543-b809-bebb6a8c38fc
+Path = /3379a2b2-e7a9-4439-ad55-028504bd1ffc
+Reference = D3;
+ValeurCmp = 1N4001;
+IdModule  = Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = cd64d4e4-e030-443f-a55b-6894520cf2ab
+Path = /af01c81b-24df-45a6-8dd6-d2435d1afdb2
+Reference = D2;
+ValeurCmp = 1N4001;
+IdModule  = Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 51662740-f55e-4e23-a9db-ab25cd022af8
+Path = /93834bb3-687b-4a30-9f2c-820dd4f21573
+Reference = D1;
+ValeurCmp = D_Bridge_+AA-;
+IdModule  = Diode_THT:Diode_Bridge_Vishay_KBL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5213c24b-253e-431e-a79c-23d244d1aae2
+Path = /4c3edddd-9331-4096-bdbd-ee8f54b002a3
+Reference = C6;
+ValeurCmp = C_Polarized;
+IdModule  = Capacitor_THT:CP_Radial_D8.0mm_P3.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 9d044e25-8a0e-4fa5-ad49-f244c3417a07
+Path = /b9bad7b0-0de0-4559-a8c5-58d093c773e7
+Reference = C5;
+ValeurCmp = C_Polarized;
+IdModule  = Capacitor_THT:CP_Radial_D8.0mm_P3.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 85731a94-cca5-4148-b810-3280cc2e2e9a
+Path = /ad1fce27-0bc8-4427-afc2-f58c5322db91
+Reference = C4;
+ValeurCmp = C_Polarized;
+IdModule  = Capacitor_THT:CP_Radial_D16.0mm_P7.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 9dec72fb-b92e-4211-978f-d0e6467b1c08
+Path = /b22f41b3-c65a-40a3-ae24-650610d01f57
+Reference = C3;
+ValeurCmp = C_Polarized;
+IdModule  = Capacitor_THT:CP_Radial_D16.0mm_P7.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 35fcfac1-3367-414c-b579-8f3dff3be150
+Path = /4ace1677-d998-40fa-aa39-38914afafbcf
+Reference = C2;
+ValeurCmp = C;
+IdModule  = Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 2c4700bc-ba5f-4ed1-b77f-1c1fae66d651
+Path = /6895230b-cb58-4e54-b35f-e33a9bd0ebba
+Reference = C1;
+ValeurCmp = C;
+IdModule  = Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P10.00mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 2837f986-4a81-4ca5-8b1d-989704e513d9
+Path = /2f708940-b418-4635-a8a6-b729d65ad3cc
+Reference = F2;
+ValeurCmp = Fuse;
+IdModule  = Fuse:Fuseholder_Clip-5x20mm_Littelfuse_520_Inline_P20.50x5.80mm_D1.30mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 2202a8a7-1ef3-4e34-aaff-40911303e630
+Path = /5f012c98-da29-4d93-864c-fa93dadfe3ce
+Reference = F1;
+ValeurCmp = Fuse;
+IdModule  = Fuse:Fuseholder_Clip-5x20mm_Littelfuse_445-030_Inline_P20.50x5.20mm_D1.30mm_Horizontal;
+EndCmp
+
+EndListe

@@ -549,26 +549,24 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 2.54 6.985 0)
+			(property "Reference" "D1"
+				(at -9.398 12.954 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "D_Bridge_+AA-"
-				(at 2.54 5.08 0)
+				(at -9.398 10.414 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 0 0)
+			(property "Footprint" "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm"
+				(at 3.302 -19.304 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -586,7 +584,7 @@
 				)
 			)
 			(property "Description" "Diode bridge, +ve/AC/AC/-ve"
-				(at 0 0 0)
+				(at 0 -17.272 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -767,7 +765,7 @@
 				)
 			)
 			(symbol "D_Bridge_+AA-_1_1"
-				(pin passive line
+				(pin power_out line
 					(at 7.62 0 180)
 					(length 2.54)
 					(name "+"
@@ -821,7 +819,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin power_out line
 					(at -7.62 0 0)
 					(length 2.54)
 					(name "-"
@@ -2053,7 +2051,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 85.09) (xy 173.99 88.9)
+			(xy 173.99 77.47) (xy 173.99 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2220,6 +2218,16 @@
 			(type default)
 		)
 		(uuid "6ba6164d-800c-4bcf-abdb-9b1122805a40")
+	)
+	(wire
+		(pts
+			(xy 173.99 86.36) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a6dce9-cef8-4d9e-b9eb-5704469c1caf")
 	)
 	(wire
 		(pts
@@ -2393,6 +2401,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 97.79) (xy 173.99 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3d7be1b-7454-40bc-90de-325b693ade38")
+	)
+	(wire
+		(pts
 			(xy 181.61 76.2) (xy 181.61 69.85)
 		)
 		(stroke
@@ -2423,7 +2441,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 88.9) (xy 173.99 91.44)
+			(xy 173.99 88.9) (xy 173.99 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2622,6 +2640,76 @@
 		(uuid "fed499a1-1f31-4a57-b6d2-d6f13112f55d")
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 173.99 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0975570c-8642-498c-92aa-389a56793ef5")
+		(property "Reference" "D4"
+			(at 177.8 94.2974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 177.8 96.8374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_THT:LED_D3.0mm"
+			(at 173.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 173.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 173.99 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc49b350-e3ea-4fa8-9e25-75a16d0e3472")
+		)
+		(pin "2"
+			(uuid "1bd5d3be-1124-4ac4-a528-6f6bd29179ab")
+		)
+		(instances
+			(project "Блок питания усилителя"
+				(path "/4a652d0c-4bea-477e-81bc-54b0791fbdeb"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 52.07 85.09 90)
 		(unit 1)
@@ -2781,7 +2869,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Lateral_P18.80x5.00mm_D1.17mm_Horizontal"
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_520_Inline_P20.50x5.80mm_D1.30mm_Horizontal"
 			(at 191.77 108.458 90)
 			(effects
 				(font
@@ -3214,7 +3302,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 182.5752 102.87 0)
 			(effects
 				(font
@@ -3257,76 +3345,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 173.99 73.66 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c3c59be-6475-443b-b4ee-f1c1c5d6633c")
-		(property "Reference" "D5"
-			(at 176.53 70.8024 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "LED"
-			(at 176.53 73.3424 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 173.99 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 173.99 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3858edaa-d7be-4d34-836f-7b1a0f8778ae")
-		)
-		(pin "2"
-			(uuid "b00fb8e5-602e-464c-9ead-59e5c8588210")
-		)
-		(instances
-			(project "Блок питания усилителя"
-				(path "/4a652d0c-4bea-477e-81bc-54b0791fbdeb"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Fuse")
 		(at 191.77 69.85 90)
 		(unit 1)
@@ -3352,7 +3370,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_111_Lateral_P18.80x5.00mm_D1.17mm_Horizontal"
+		(property "Footprint" "Fuse:Fuseholder_Clip-5x20mm_Littelfuse_445-030_Inline_P20.50x5.20mm_D1.30mm_Horizontal"
 			(at 191.77 71.628 90)
 			(effects
 				(font
@@ -3396,7 +3414,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 173.99 81.28 0)
+		(at 173.99 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3405,7 +3423,7 @@
 		(fields_autoplaced yes)
 		(uuid "646951cc-5b9d-4d44-bcb9-1202e291e7c9")
 		(property "Reference" "R1"
-			(at 176.53 80.0099 0)
+			(at 176.53 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3414,7 +3432,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 176.53 82.5499 0)
+			(at 176.53 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3423,7 +3441,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 172.212 81.28 90)
+			(at 172.212 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3432,7 +3450,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 81.28 0)
+			(at 173.99 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3441,7 +3459,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 173.99 81.28 0)
+			(at 173.99 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3536,34 +3554,34 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 173.99 102.87 270)
+		(at 173.99 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "72363a2a-d3e4-47f2-bcbf-8b9e1f52bfbd")
-		(property "Reference" "D4"
-			(at 176.53 100.0124 90)
+		(uuid "82173ca9-3c98-4c04-9ffc-6e4cbfade1f9")
+		(property "Reference" "D5"
+			(at 177.8 82.8674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "LED"
-			(at 176.53 102.5524 90)
+			(at 177.8 85.4074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 173.99 102.87 0)
+			(at 173.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3572,7 +3590,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 102.87 0)
+			(at 173.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3581,7 +3599,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 173.99 102.87 0)
+			(at 173.99 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3590,15 +3608,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "8dcd21bf-e2fc-4c30-ac65-612cd4c54c67")
+			(uuid "22f2748d-003a-474a-b514-760152bfceca")
 		)
 		(pin "2"
-			(uuid "ea46842f-7158-4be3-89ca-0de5724d5d2f")
+			(uuid "11822831-1a10-4f63-b3fe-725099337a07")
 		)
 		(instances
 			(project "Блок питания усилителя"
 				(path "/4a652d0c-4bea-477e-81bc-54b0791fbdeb"
-					(reference "D4")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -3606,7 +3624,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 173.99 95.25 0)
+		(at 173.99 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3615,7 +3633,7 @@
 		(fields_autoplaced yes)
 		(uuid "8c0a805d-a940-4526-a1cf-19f6493d555e")
 		(property "Reference" "R2"
-			(at 176.53 93.9799 0)
+			(at 176.53 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3624,7 +3642,7 @@
 			)
 		)
 		(property "Value" "R"
-			(at 176.53 96.5199 0)
+			(at 176.53 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3633,7 +3651,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
-			(at 172.212 95.25 90)
+			(at 172.212 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3642,7 +3660,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 173.99 95.25 0)
+			(at 173.99 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3651,7 +3669,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 173.99 95.25 0)
+			(at 173.99 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3699,8 +3717,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:Diode_Bridge_32.0x5.6x17.0mm_P10.0mm_P7.5mm"
-			(at 100.33 87.63 0)
+		(property "Footprint" "Diode_THT:Diode_Bridge_Vishay_KBL"
+			(at 103.632 106.934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3718,7 +3736,7 @@
 			)
 		)
 		(property "Description" "Diode bridge, +ve/AC/AC/-ve"
-			(at 100.33 87.63 0)
+			(at 100.33 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3848,7 +3866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm"
 			(at 139.3952 102.87 0)
 			(effects
 				(font
@@ -4004,7 +4022,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm"
 			(at 139.3952 82.55 0)
 			(effects
 				(font
@@ -4073,7 +4091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 182.5752 83.82 0)
 			(effects
 				(font
